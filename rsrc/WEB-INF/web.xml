@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+						http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1"
+	metadata-complete="true">
+
+	<servlet>
+		<servlet-name>SSOR</servlet-name>
+		<servlet-class>net.scientifichooliganism.ssorgame.SSORRestSvc</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SSOR</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+
+	<display-name>SSOR</display-name>
+	<description>Superimposed Schedule of Reinforcement Example REST Service</description>
+</web-app>
